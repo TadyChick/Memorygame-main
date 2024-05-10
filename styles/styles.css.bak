@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+:root {
+    --page-background-color: #D4D4D4;
+    --text-color: #342020;
+    --link-color: #67b2e8;
+    --link-hover-color: #60bec9;
+    --body-font-size: clamp(11pt, 15pt, 17pt);
+}
+
+html {
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+/* Body */
+body {
+    /* Dark mode */
+    color: var(--text-color);
+    background-color: var(--page-background-color);
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+img {
+    width: 256px; /* animal picture sizes  */
+    height: 256px;
+	opacity: 0.9;
+}
+
+/* Hyperlinks */
+a:link {
+    color: var(--link-color);
+    padding: 2px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:visited {
+    color: hsla(255, 32%, 58%, 0.79);
+    border-color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--link-hover-color);
+}
+
+.section-txt {
+    text-align: center;
+}
+
+.hide-button {
+    border-style: outset;
+    border-color: #D4D4D4;
+    border-radius: 20px;
+    background-color: #342020;
+    color: #D4D4D4;
+    min-width: 20px;
+    min-height: 30px;
+}
+
+/* Define styles for the container */
+.image-container {
+    width: 256px; /* Adjust the width of the container */
+    height: 256px; /* Adjust the height of the container */
+    position: relative; /* Position the parts relative to the container */
+    border: 10px solid black; /* Add a border for visual clarity */
+}
+.part1, .part2, .part3, .part4,
+.part5, .part6, .part7, .part8,
+.part9, .part10, .part11, .part12,
+.part13, .part14, .part15, .part16 {
+width: 25%; /* Each part occupies 25% of the container's width */
+height: 25%; /* Each part occupies 25% of the container's height */
+float: left; /* Float the parts to arrange them horizontally */
+background-repeat: no-repeat; /* Prevent background from repeating */
+background-size: 400% 400%;
+background-image: url('../MMM_IMAGES/AnimalsC/Chicken_C_up.png');
+opacity: 0.1;
+}
+
+
+#imagePartsContainer {
+	width: 270px; /* animal picture sizes  */
+    height: 270px;
+    margin: 20px; /* Add some margin around the container */
+    border: 1px solid black; /* Add a border around the container */
+    padding: 10px; /* Add some padding inside the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#game-board > .node {
+	border-radius: 10px;
+	border-width: 5px;
+	border-style:solid;
+    border-color: #D4D4D4;
+	font-size: 15pt;
+}
+
+#start-button-container {
+    text-align: center;
+}
+
+#start-button {
+    text-align: center;
+    background-color: #F1F1F1;
+    border-color: white;
+    font-size: 20pt;
+	text-color: #342020;
+    color: black;
+    min-height: 20px;
+    min-width: 40px;
+}
+
+#game-description {
+    text-align: center;
+    font-size: 13pt;
+}
